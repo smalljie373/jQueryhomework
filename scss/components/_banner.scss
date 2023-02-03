@@ -1,0 +1,23 @@
+.swiper {
+    width: 1024px;
+    height: 346px;
+    position: relative;
+    margin:0 0 55px 0;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    h2{
+        position: absolute;
+        z-index: 2;
+        bottom:25%;
+        top:25%;
+        font-size: 36px;
+        color:$white;
+        line-height: 1.3em;
+        background:rgba(98,198,198,0.3);
+        padding:36px 45px;
+        width: 100%;
+    }
+    }

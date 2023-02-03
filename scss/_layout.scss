@@ -1,0 +1,58 @@
+.socialMedia{
+    background-color:$secondary;
+    .social{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            padding:7px 13px 6px 0;
+        }
+        & li:first-child{
+            position: relative;
+            &::after{
+                content:'|';
+                position: absolute;
+                color:gray;
+                right:5px;
+            }
+        }
+        a{
+            text-decoration: none;
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 20px;
+    li{
+        margin:5px 0;
+        a{
+            position: relative;
+            color:red;
+            text-decoration: none;
+            &::before{
+                content:'';
+                position: absolute;
+                display: block;
+                bottom:-2px;
+                left:0;
+                border-bottom:3px solid red;
+                width: 0%;
+                transition: width .3s ease;
+            }
+            &:hover::before{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+.facebook{
+    color:#657aac;
+}
+.twitter{
+    color:#3fd7ee;
+}
